@@ -1,0 +1,15 @@
+{
+    "short_name": "Luxury cars",
+    "name": "Car Rental",
+    "icons": [
+        {
+            "src": "./images/mainlogo.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "background_color": "#FFFFFF",
+    "theme_color": "#000"
+}

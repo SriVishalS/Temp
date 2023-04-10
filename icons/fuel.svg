@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="267" height="267" viewBox="0 0 267 267">
+  <g id="fuel" transform="translate(-314 -460)">
+    <g id="Ellipse_78" data-name="Ellipse 78" transform="translate(314 460)" fill="#caa900" stroke="#242424" stroke-width="15">
+      <circle cx="133.5" cy="133.5" r="133.5" stroke="none"/>
+      <circle cx="133.5" cy="133.5" r="126" fill="none"/>
+    </g>
+    <g id="fuel-2" data-name="fuel" transform="translate(384.611 524.992)">
+      <g id="Group_1" data-name="Group 1" transform="translate(0)">
+        <path id="Path_1" data-name="Path 1" d="M135.864,32.151l.114-.114L107.665,3.8l-8.057,8.057,16.037,16.037a18.974,18.974,0,0,0,6.764,36.712,18.775,18.775,0,0,0,7.6-1.6v54.8a7.6,7.6,0,1,1-15.2,0v-34.2a15.2,15.2,0,0,0-15.2-15.2h-7.6V15.2A15.2,15.2,0,0,0,76.806,0H31.2A15.2,15.2,0,0,0,16,15.2V136.813H92.007V79.808h11.4v38a19,19,0,0,0,38,0V45.6A19.083,19.083,0,0,0,135.864,32.151ZM76.806,53.205H31.2v-38h45.6Zm45.6,0a7.6,7.6,0,1,1,7.6-7.6A7.623,7.623,0,0,1,122.41,53.205Z" transform="translate(-16)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

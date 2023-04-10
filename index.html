@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DriveNow all types of vehicles rental services company.">
+    <link rel="manifest" href="manifest.json">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="./images/mainlogo.png">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+    <title>Luxury Cars</title>
+    <script src="script.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('BmdFcIU5QzIDtXNPU');
+        })();
+    </script>
+</head>
+
+<body onload="loaderFunc()">
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">Luxury<span>Cars</span></a>
+            <!-- Open Mobile Menu -->
+            <img id="menu-open-scroll" class="mobile-menu-open" onclick="openNav()" src="icons/mobile-menu.svg"
+                alt="Open Mobile Navigation Menu">
+            <!-- <img id="menu-open" class="mobile-menu-open" onclick="openNav()" src="icons/mobile-menu.svg" alt="Open Mobile Navigation Menu"> -->
+            <nav class="mobile-navigation" id="mobile">
+                <!-- Close Mobile Menu -->
+                <img id="menu-close" class="mobile-menu-close" onclick="closeNav()" src="icons/mobile-menu-close.svg"
+                    alt="Close Mobile Navigation Menu">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="#gallery">Our Cars</a></li>
+                    <li><a href="#reservation">Test Drive</a></li>
+                    <li><a href="#contact">About Us</a></li>
+                </ul>
+            </nav>
+            <!-- Desktop Navigation -->
+            <nav class="desktop-navigation">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="#gallery">Our Cars</a></li>
+                    <li><a href="#reservation">Test Drive</a></li>
+                    <li><a href="#contact">About Us</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <h1>As Good As New</h1>
+                <div class="subthings">
+                    <p>Whatever you need, whenever you want.<br>Without the cost or hassle of owning.</p>
+                    <a href="#reservation" class="yellow-button">Test Drive</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero End -->
+
+    <!-- Features/Advantages Section -->
+    <section class="features">
+        <div class="container">
+            <ul class="features-list">
+                <li>We provide more than just traditional car rental. We're your global transportation solution.</li>
+                <li>Our customized rental programs are designed specifically to meet your needs.</li>
+                <li>We offer a wide range of vehicles for different tasks.</li>
+                <li>Test Drive anytime you want.</li>
+                <li>Customer Services 24/7.</li>
+            </ul>
+            <div class="rent-illus">
+                <img src="images/rent.png" alt="Vehicle Rent Illustration of hand giving key to another hand">
+            </div>
+        </div>
+    </section>
+    <!-- Features/Advantages End -->
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="featured">Featured Vehicles</h2>
+            <div class="vehicles">
+
+                <a class="car-card" href="rolls.html" style="text-decoration: none;">
+                    <img src="./images/rolls1.webp" alt="Vehicle Type Motorbike" class="car-img">
+                    <h3 class="car-title">ROLLS ROYCE</h3>
+                    <p class="car-price">Rent Starts at <span>10000</span> per day</p>
+                    <ul class="car-specs">
+                        <li class="car-specs-fuel">Fuel Type : <span>Electric, Gasoline.</span></li>
+                        <li class="car-specs-transmission">Transmission Type : <span>None.</span></li>
+                    </ul>
+                </a>
+
+                <a class="car-card" href="audi.html" style="text-decoration: none;">
+                    <img src="./images/GalleryCarAudi-2.png" alt="Vehicle Type Luxury" class="car-img">
+                    <h3 class="car-title">AUDI</h3>
+                    <p class="car-price">Rent Starts at <span>12000</span> per day</p>
+                    <ul class="car-specs">
+                        <li class="car-specs-fuel">Fuel Type : <span>Hybrid, Gasoline, Diesel.</span></li>
+                        <li class="car-specs-transmission">Transmission Type : <span>Automatic.</span></li>
+                    </ul>
+                </a>
+
+                <a class="car-card" href="benz.html" style="text-decoration: none;">
+                    <img src="./images/NewBenz-1.png" alt="Vehicle Type Truck" class="car-img">
+                    <h3 class="car-title">BENZ</h3>
+                    <p class="car-price">Rent Starts at <span>14,000</span> per day</p>
+                    <ul class="car-specs">
+                        <li class="car-specs-fuel">Fuel Type : <span>Diesel.</span></li>
+                        <li class="car-specs-transmission">Transmission Type : <span>Automatic.</span></li>
+                    </ul>
+
+                </a>
+                <a class="car-card" href="bmw.html" style="text-decoration: none;">
+                    <img src="./images/bmw1.jpg" alt="Vehicle Type Truck" class="car-img">
+                    <h3 class="car-title">BMW</h3>
+                    <p class="car-price">Rent Starts at <span>16000</span> per day</p>
+                    <ul class="car-specs">
+                        <li class="car-specs-fuel">Fuel Type : <span>Diesel.</span></li>
+                        <li class="car-specs-transmission">Transmission Type : <span>Automatic.</span></li>
+                    </ul>
+                </a>
+
+            </div>
+            <div class="view-button" style="display: none;">
+                <a href="gallery.html" class="yellow-button">View More</a>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery End -->
+
+    <!-- Reservation/Contact Section -->
+    <section class="resertact" id="reservation">
+        <div class="container">
+            <!-- Reservation Option Select and Estimated Price Calculation -->
+            <div class="reservation">
+                <h2>Rents</h2>
+                <form name="myform">
+                    <!-- Option Values as the base price of each vehicle -->
+                    <select name="vehicleItems" id="vehicleItems" onChange="resetToDefault(); calculatePrice()"
+                        class="usrVehicle">
+                        <option hidden disabled selected value="0">-- Choose Brand of Vehicle --</option>
+                        <option value="20">ROLLS ROYCE </option>
+                        <option value="10">AUDI </option>
+                        <option value="14">BENZ </option>
+                        <option value="16">BMW </option>
+
+                    </select>
+                    <!-- Option Values of fuel to calculate the percentage of vehicle price -->
+                    <select name="fuelItems" id="fuelItems" onChange="calculatePrice()" hidden style="display: none;">
+                        <option hidden disabled selected value="0"> -- Choose a type of Fuel -- </option>
+                        <option value="14">Gasoline (+14% of base price)</option>
+                        <option value="21">Diesel (+21% of base price)</option>
+                        <option value="9">Hybrid (+9% of base price)</option>
+                        <option value="5">Electric (+5% of base price)</option>
+                    </select>
+                    <!-- Option Values of transmision to calculate the percentage of vehicle price -->
+                    <select name="transmissionItems" id="transmissionItems" onChange="calculatePrice()" hidden
+                        style="display: none;">
+                        <option hidden disabled selected value="0"> -- Choose a type of Transmission -- </option>
+                        <option value="0">Manual</option>
+                        <option value="19">Automatic (+19% of base price)</option>
+                    </select>
+                    <!-- Asking for user input for the number of days to rent the vehicle -->
+                    <label for="days" id="enterdays">Please enter the duration you want to test drive the vehicle ( Per
+                        day ):</label>
+                    <input type="number" id="days" name="days" value="1" min="1" max="10" onChange="calculatePrice()">
+                    <!-- Showing the total estimated price -->
+                    <label for="rentPrice" id="yourPrice" hidden>Your estimated price is:</label>
+                    <input type="text" id="rentPrice" Size=8 value="" readonly class="rate">
+                    <div class="contact__container container grid">
+
+                        <div class="contact__form grid">
+                            <div class="contact__inputs grid">
+                                <div class="contact__content">
+                                    <label for="name" class="contact__label">Name</label>
+                                    <input placeholder="Enter your name" type="text" name="name" id="name"
+                                        class="contact__input" />
+                                </div>
+
+                                <div class="contact__content">
+                                    <label for="email" class="contact__label">E-mail</label>
+                                    <input placeholder="Enter your email" type="email" name="email" id="email"
+                                        class="contact__input" />
+                                </div>
+                            </div>
+                            <div>
+                                <button class="button button--flex contact__button" id="btn" onclick="sendMail()"
+                                    type="button">
+                                    Rent a Car
+                                    <i class="uil uil-message button__icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+
+
+
+            </div>
+            <hr>
+            <!-- Contact Form -->
+            <div class="contact" id="contact">
+                <h2>About Us</h2>
+                <p class="Content" ">
+                    Cars have become an integral part of modern life, providing people with a convenient and efficient
+                    way to get around. <br>
+                    Over the years, numerous car companies have emerged, each with their own unique histories and
+                    contributions to the
+                    industry. <br> One such company is Toyota, a Japanese multinational corporation that is known for
+                    producing
+                    high-quality and reliable
+                    vehicles. <br> Founded in 1937, Toyota has grown to become one of the largest and most successful car
+                    companies in the world,
+                    with a reputation for innovation and sustainability.Toyota's first car, the Toyoda Model AA, was
+                    released in 1936 and marked the beginning of the
+                    company's journey to
+                    becoming a leader in the automotive industry. Since then, Toyota has released a wide range of
+                    vehicles, including
+                    sedans, SUVs, and trucks, and has expanded into other areas such as robotics and renewable energy. <br>
+
+                    One of the key factors behind Toyota's success has been its commitment to continuous improvement.
+                    The company has a long
+                    history of implementing lean manufacturing techniques, which have helped it to reduce waste and
+                    increase efficiency in
+                    its production processes. <br>
+
+                    In addition to producing high-quality vehicles, Toyota is also known for its efforts to reduce its
+                    environmental impact. <br>
+                    The company has set ambitious goals for reducing its carbon emissions and has invested in a range of
+                    technologies to
+                    make its vehicles more fuel-efficient and sustainable.
+
+                    Overall, Toyota is a car company that has made a significant impact on the automotive industry and
+                    has a bright future
+                    ahead. Its commitment to innovation, quality, and sustainability has earned it a loyal customer base
+                    and a strong
+                    reputation in the industry. <br>
+                </p>
+
+            </div>
+        </div>
+        </div>
+        <hr>
+        <iframe
+            src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.153075687773!2d80.2275015348877!3d13.025922300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526707861f233f%3A0xbac25fafdbb4e221!2sAudi%20Chennai!5e0!3m2!1sen!2sin!4v1673002404453!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <!-- Reservation/Contact End -->
+    <!--==================== CONTACT ME ====================-->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <a class="logo" href="index.html">Drive<span>Now</span></a>
+            <div class="footer-left">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="#gallery">Our Cars</a></li>
+                    <li><a href="">Test Drive</a></li>
+                    <li><a href="contact.html">About US</a></li>
+                </ul>
+            </div>
+            <div class="footer-middle" style="display: none;">
+                <ul>
+                    <li><a href="#">Help & FAQ</a></li>
+                    <li><a href="#">Solutions for Business</a></li>
+                    <li><a href="#">Service Partners</a></li>
+                    <li><a href="#">Site Map</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <p>dhilipraj940.com</p>
+                    </li>
+                    <li>
+                        <p>8056272499</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>© 2023 DriveNow Corporation - All Rights Reserved. <span><a href="#">Terms of Use</a></span><span><a
+                            href="#">Privacy Policy</a></span></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Loaders -->
+    <div class="loaderWrapper">
+        <span class="loader"></span>
+    </div>
+    <!-- Javascript File -->
+
+</body>
+
+</html>

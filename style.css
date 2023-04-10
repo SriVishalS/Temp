@@ -1,0 +1,1158 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url(../images/Rolls.jpeg) url(../images/BMW.jpeg) url(../images/BENZ.jpeg) url(../images/audi.jpeg) url(../images/car5.jpeg) url(../icons/facebook-hover.svg) url(../icons/twitter-hover.svg);
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background: #FFFFFF;
+  margin: 0;
+  font-family: "Raleway",sans-serif;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #0b0c10;
+  padding: 1em 2em;
+}
+
+.navbar .logo {
+  width: 300px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #66fcf1;
+  font-size: 2em;
+  font-family: 'Grechen Fuemen', cursive;
+}
+
+.navbar .logo span {
+  color: #c5c6c7;
+}
+
+.navbar nav.mobile-menu-open {
+  display: block;
+}
+
+.navbar nav.desktop-navigation {
+  display: none;
+}
+
+.navbar nav.mobile-navigation {
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  display: block;
+  height: 100vh;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateY(-400%);
+          transform: translateY(-400%);
+}
+
+.navbar nav.mobile-navigation a {
+  margin-left: 1em;
+}
+
+.navbar nav.mobile-navigation ul {
+  margin-top: 6em;
+  background-color: #0b0c10;
+}
+
+.navbar nav.mobile-navigation li a {
+  color: #66fcf1;
+  text-decoration: none;
+  display: block;
+  padding: 1em 0 1em 0;
+  font-size: 2em;
+  text-align: center;
+}
+
+.navbar nav.mobile-navigation li.current a {
+  color: #66fcf1;
+  font-weight: bold;
+}
+
+.navbar .mobile-menu-close {
+  float: right;
+  margin: 1.5em 2.3em;
+  cursor: pointer;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.mobile-menu-open {
+  cursor: pointer;
+}
+
+#menu-open-scroll {
+  padding: 1em;
+  position: fixed;
+  right: 3%;
+  border-radius: 5px;
+  top: 1%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  background-color: #0b0c10;
+  color: white;
+  padding: 3em 2em;
+}
+
+.left-col {
+  padding-left: 2em;
+}
+
+.left-col h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+.yellow-button {
+  color: #0b0c10;
+  text-decoration: none;
+  padding: 0.6em 1.3em;
+  font-size: 1.4em;
+  border-radius: 0.2em;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 2em;
+  cursor: pointer;
+  background-color: #45a29e;
+}
+
+.hero {
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  width: 100%;
+  height: 90vh;
+  -webkit-animation: slide 10s infinite;
+          animation: slide 10s infinite;
+}
+
+.hero .container {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    background: rgba(0, 0, 0, 0.5) url(../images/Rolls.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  20% {
+    background: rgba(0, 0, 0, 0.5) url(../images/Rolls.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  20.01% {
+    background: rgba(0, 0, 0, 0.5) url(../images/BMW.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  40% {
+    background: rgba(0, 0, 0, 0.5) url(../images/BMW.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  40.01% {
+    background: rgba(0, 0, 0, 0.5) url(../images/BENZ.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  60% {
+    background: rgba(0, 0, 0, 0.5) url(../images/BENZ.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  60.01% {
+    background: rgba(0, 0, 0, 0.5) url(../images/audi.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  80% {
+    background: rgba(0, 0, 0, 0.5) url(../images/audi.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  80.01% {
+    background: rgba(0, 0, 0, 0.5) url(../images/car5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.5) url(../images/car5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+}
+
+@keyframes slide {
+  0% {
+    background: rgba(0, 0, 0, 0.5) url(../images-modify/audi.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  20% {
+    background: rgba(0, 0, 0, 0.5) url(../images/Rolls.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  20.01% {
+    background: rgba(0, 0, 0, 0.5) url(../images/BMW.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  40% {
+    background: rgba(0, 0, 0, 0.5) url(../images/BMW.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  40.01% {
+    background: rgba(0, 0, 0, 0.5) url(../images/BENZ.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  60% {
+    background: rgba(0, 0, 0, 0.5) url(../images/BENZ.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  60.01% {
+    background: rgba(0, 0, 0, 0.5) url(../images/audi.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  80% {
+    background: rgba(0, 0, 0, 0.5) url(../images/audi.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  80.01% {
+    background: rgba(0, 0, 0, 0.5) url(../images/car5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.5) url(../images/car5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+  }
+}
+
+.features {
+  background: #0b0c10;
+  color: #FFFFFF;
+}
+
+.features .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.features .container .features-list {
+  -webkit-box-flex: 75%;
+      -ms-flex: 75%;
+          flex: 75%;
+}
+
+.features .container .rent-illus {
+  display: none;
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+}
+
+.features .container .rent-illus img {
+  width: 177px;
+  height: 177px;
+}
+
+ul.features-list {
+  margin: 0;
+  padding-left: 0.1em;
+}
+
+ul.features-list li {
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+ul.features-list li:before {
+  content: '';
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background:#07caf1;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+
+.gallery {
+  background-color: #0b0c10;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gallery .view-button {
+  padding-top: 1.8em;
+  text-align: center;
+}
+
+.gallery .featured {
+  color: #66fcf1;
+  padding-top: 1.5em;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.vehicles {
+  background: #0b0c10;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.vehicles .car-card {
+  background: #0b0c10;
+  color: #FFFFFF;
+  border-radius: 0.5em;
+  margin: 0 auto 3em auto;
+  width: 350px;
+  height: 453.57px;
+}
+
+.vehicles .car-card img {
+  border-radius: 0.5em;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.car-title {
+  text-align: center;
+  font-size: 1.7em;
+  font-family: monospace;
+}
+
+.car-price {
+  text-align: center;
+  font-size: 1.1em;
+  font-family: monospace;
+
+}
+
+.car-price span {
+  color: #66fcf1;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+ul.car-specs {
+  margin-left: 2em;
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+  font-size: 0.8em;
+}
+
+ul.car-specs li.car-specs-fuel,
+ul.car-specs li.car-specs-transmission {
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+ul.car-specs li.car-specs-fuel span,
+ul.car-specs li.car-specs-transmission span {
+  color: #66fcf1;
+  font-weight: bold;
+}
+
+ul.car-specs li.car-specs-fuel:before,
+ul.car-specs li.car-specs-transmission:before {
+  content: '';
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  margin-right: 0.5em;
+  top: -0.2em;
+}
+
+
+h2 {
+  font-size: 2em;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+button {
+  outline: none;
+}
+
+select {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1em;
+  outline: none;
+}
+
+#days {
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+#rentPrice {
+  color: #07caf1;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+}
+
+#rentPrice {
+  display: inline-block;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 20px;
+  text-align: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: scroll;
+}
+
+.overlay-content {
+  background-color: #FFFFFF;
+  margin: auto;
+  padding: 30px;
+  font-size: 1em;
+  border: 5px solid #CAA900;
+  border-radius: 0.5em;
+  width: 80%;
+  font-size: 1em;
+  text-align: center;
+}
+
+.overlay-content span {
+  font-weight: bold;
+}
+
+#overlay-close {
+  float: right;
+  cursor: pointer;
+}
+
+
+#message {
+  margin-bottom: 2em;
+}
+
+#confirm-button {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.footer {
+  height: auto;
+  background: #242424;
+  width: 100%;
+  padding: 0;
+}
+
+.footer .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 15% 50% 25% 10%;
+      grid-template-rows: 15% 50% 25% 10%;
+      grid-template-areas: 'logo logo'
+ 'left middle'
+ 'right right'
+ 'cr cr';
+}
+
+.footer .container .footer-left {
+  grid-area: left;
+  font-size: 1.2em;
+}
+
+.footer .container .footer-middle {
+  grid-area: middle;
+  font-size: 1.2em;
+}
+
+.footer .container .footer-right {
+  -ms-grid-column-span: 2;
+  grid-area: right;
+  color: #9c9c9c;
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer .container .footer-right p {
+  font-size: 0.8em;
+}
+
+.footer .container .copyright {
+  -ms-grid-column-span: 2;
+  grid-area: cr;
+  text-align: center;
+  font-size: 1em;
+  color: #9c9c9c;
+}
+
+.footer .container .copyright p {
+  margin-top: 0.5em;
+  font-size: 0.8em;
+}
+
+.footer .container .copyright span a {
+  color: #66fcf1;
+  text-decoration: none;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.footer .container .logo {
+  -ms-grid-column-span: 2;
+  grid-area: logo;
+  padding-top: 0.5em;
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 2em;
+}
+
+.footer .container .logo span {
+  color: #66fcf1;
+}
+
+.footer .container a {
+  margin-left: 1em;
+}
+
+.footer .container ul {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.footer .container li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 1em;
+  font-size: 1em;
+  text-align: left;
+}
+
+.footer .container li.current a {
+  font-weight: bold;
+}
+.Content{
+    color: #c5c6c7;
+    letter-spacing: 4px;
+    line-height: 20px;
+  }
+
+@media only screen and (min-width: 1025px) {
+  .mobile-menu-open, .mobile-menu-close {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+  }
+  .navbar .logo span {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: #FFFFFF;
+  }
+  .navbar .logo:hover span {
+    color: #07caf1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .navbar nav.desktop-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav.desktop-navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+  }
+  .navbar nav.desktop-navigation li.current a {
+    font-weight: bold;
+  }
+  .navbar nav.desktop-navigation li {
+    margin: 0 1em 0 1em;
+  }
+  .navbar nav.desktop-navigation li a {
+    font-size: 1.3em;
+    padding: 0.5em;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .navbar nav.desktop-navigation li a:hover {
+    color: #07caf1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .navbar nav.desktop-navigation li.fb-icon {
+    margin: 0.2em 0 0 2em;
+  }
+  .navbar nav.desktop-navigation li.fb-icon a {
+    padding: 0.5em 0 0 0;
+    background-color: #242424;
+    background-image: url(../icons/facebook.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 25px;
+    width: 25px;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .navbar nav.desktop-navigation li.fb-icon a:hover {
+    background-image: url(../icons/facebook-hover.svg);
+    -webkit-transition: none;
+    transition: none;
+  }
+  .navbar nav.desktop-navigation li.tweet-icon {
+    margin: 0.2em 0 0 2em;
+  }
+  .navbar nav.desktop-navigation li.tweet-icon a {
+    padding: 0.5em 0 0 0;
+    background-color: #242424;
+    background-image: url(../icons/twitter.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 25px;
+    width: 25px;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .navbar nav.desktop-navigation li.tweet-icon a:hover {
+    background-image: url(../icons/twitter-hover.svg);
+    -webkit-transition: none;
+    transition: none;
+  }
+  .yellow-button {
+    background: none;
+    color: white;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .yellow-button:hover {
+    background: #07caf1;
+    color: #FFFFFF;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .vehicles {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  
+  .footer .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33.33% 33.33% 33.33%;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    -ms-grid-rows: 20% 65% 15%;
+        grid-template-rows: 20% 65% 15%;
+        grid-template-areas: 'logo logo logo'
+ 'left middle right'
+ 'cr cr cr';
+  }
+  .footer .container .footer-left {
+    font-size: 1em;
+  }
+  .footer .container .footer-middle {
+    font-size: 1em;
+  }
+  .footer .container .footer-right {
+    text-align: left;
+    font-size: 1.1em;
+    padding-right: 2em;
+  }
+  .footer .container .footer-right p {
+    padding-top: 0.2em;
+  }
+  .footer .container .copyright {
+    font-size: 1.1em;
+  }
+  .footer .container .copyright span a {
+    text-decoration: none;
+  }
+  .footer .container .copyright span a:hover {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+  .footer .container .logo span {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: #FFFFFF;
+  }
+  .footer .container .logo:hover span {
+    color: #07caf1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .footer .container li a:hover {
+    color: #07caf1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .features .container .rent-illus {
+    display: block;
+  }
+  .hero {
+    width: 120%;
+  }
+  
+  @-webkit-keyframes slide {
+    0% {
+      background: rgba(0, 0, 0, 0.5) url(../images-modify/audi.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 120%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    20% {
+      background: rgba(0, 0, 0, 0.5) url(../images-modify/audi.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 100%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    20.01% {
+      background: rgba(0, 0, 0, 0.5) url(../images/BMW.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 120%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    40% {
+      background: rgba(0, 0, 0, 0.5) url(../images/BMW.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 100%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    40.01% {
+      background: rgba(0, 0, 0, 0.5) url(../images/BENZ.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 120%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    60% {
+      background: rgba(0, 0, 0, 0.5) url(../images/BENZ.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 100%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    60.01% {
+      background: rgba(0, 0, 0, 0.5) url(../images/audi.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 120%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    80% {
+      background: rgba(0, 0, 0, 0.5) url(../images/audi.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 100%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    80.01% {
+      background: rgba(0, 0, 0, 0.5) url(../images/car5.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 120%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    100% {
+      background: rgba(0, 0, 0, 0.5) url(../images/car5.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 100%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+  }
+  @keyframes slide {
+    0% {
+      background: rgba(0, 0, 0, 0.5) url(../images/Rolls.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 120%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    20% {
+      background: rgba(0, 0, 0, 0.5) url(../images/Rolls.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 100%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    20.01% {
+      background: rgba(0, 0, 0, 0.5) url(../images/BMW.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 120%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    40% {
+      background: rgba(0, 0, 0, 0.5) url(../images/BMW.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 100%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    40.01% {
+      background: rgba(0, 0, 0, 0.5) url(../images/BENZ.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 120%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    60% {
+      background: rgba(0, 0, 0, 0.5) url(../images/BENZ.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 100%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    60.01% {
+      background: rgba(0, 0, 0, 0.5) url(../images/audi.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 120%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    80% {
+      background: rgba(0, 0, 0, 0.5) url(../images/audi.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 100%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    80.01% {
+      background: rgba(0, 0, 0, 0.5) url(../images/car5.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 120%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    100% {
+      background: rgba(0, 0, 0, 0.5) url(../images/car5.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 100%;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+  }
+}
+/*# sourceMappingURL=style.css.map */
+.loaderWrapper{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 10000000000;
+    background-color: black;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+}
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #FFF;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: rotation 2s ease-in-out infinite alternate;
+}
+.loader::after {
+  border-color: #07caf1;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
